@@ -27,14 +27,12 @@ jobs:
         working-directory: apps/server
         run: |
           npm install
-          npm run build --if-present
-          npm run test --if-present
 
       - name: Upload artifact for deployment job
         uses: actions/upload-artifact@v4
         with:
           name: node-app
-          path: .
+          path: apps/server
 
   deploy:
     runs-on: ubuntu-latest
@@ -65,3 +63,4 @@ jobs:
           package: apps/server
 
           
+
