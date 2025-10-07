@@ -24,6 +24,7 @@ jobs:
           node-version: '22.x'
 
       - name: npm install, build, and test
+        working-directory: apps/server
         run: |
           npm install
 
@@ -62,6 +63,7 @@ jobs:
           package: .
 
           
+
 
 
 
