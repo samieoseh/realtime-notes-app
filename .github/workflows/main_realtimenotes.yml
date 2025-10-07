@@ -61,7 +61,8 @@ jobs:
         with:
           app-name: 'realtimenotes'
           slot-name: 'Production'
-          package: .
+          package: apps/server
 
           
+
 
